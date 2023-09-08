@@ -39,7 +39,7 @@ public class ProdutoRepository {
 
     public Produto atualizar(Produto produto) {
         var produtoEncontrado = obterPorId(produto.getId());
-        if (!produtoEncontrado.isEmpty()) {
+        if (produtoEncontrado.isEmpty()) {
             throw new InputMismatchException("Produto não encontrado");
         }
 
