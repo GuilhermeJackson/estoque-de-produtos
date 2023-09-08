@@ -1,13 +1,13 @@
 package com.teste.netflix.repository;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 
 import com.teste.netflix.model.Produto;
+import com.teste.netflix.model.exception.ResourceNotFoundException;
 
 @Repository
 public class ProdutoRepository {
@@ -40,12 +40,10 @@ public class ProdutoRepository {
     public Produto atualizar(Produto produto) {
         var produtoEncontrado = obterPorId(produto.getId());
         if (produtoEncontrado.isEmpty()) {
-            throw new InputMismatchException("Produto não encontrado");
+            throw new ResourceNotFoundException("Produto não encontrado para aplicar a atualização.");
         }
-
         deletar(produto.getId());
         produtos.add(produto);
-
         return produto;
     }
 }
