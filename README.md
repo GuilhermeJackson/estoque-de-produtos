@@ -64,6 +64,7 @@ Response - 201
 ```
 RequestBody
 {
+    "id": Integer,
     "name": String,
     "quantidade": Integer,
     "valor": Double,
@@ -108,13 +109,13 @@ Response - 200
 ```
 RequestBody
 {
+    "id": Integer,
     "name": String,
     "quantidade": Integer,
     "valor": Double,
     "descricao": String
 }
 ```
-## Rodando os testes
 
 Para rodar os testes, rode o seguinte comando
 
