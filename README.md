@@ -1,4 +1,4 @@
-﻿# estoque-de-produtos
+﻿# Estoque de Produtos
 
 Esse projeto tem como objetivo gerenciar um estoque de produtos.
 
