@@ -16,24 +16,24 @@ public class ProdutoService {
     private ProdutoRepository repository;
 
     public List<Produto> obterTodos() {
-        return repository.obterTodos();
+        return repository.findAll();
     }
 
     public Optional<Produto> obterPorId(Integer id) {
-        return repository.obterPorId(id);
+        return repository.findById(id);
     }
 
     public Produto adicionar(Produto produto) {
-        return repository.adicionar(produto);
+        return repository.save(produto);
     }
 
     public void deletar(Integer id) {
-        repository.deletar(id);
+        repository.deleteById(id);
     }
 
         public Produto atualizar(Integer id, Produto produto) {
         produto.setId(id);
 
-        return repository.atualizar(produto);
+        return repository.save(produto);
     }
 }
