@@ -13,7 +13,7 @@ Esse projeto tem como objetivo gerenciar um estoque de produtos.
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
-| `NULL` | `List<Produtos>` | Retorna uma lista com todos os produtos cadastrados |
+| `N/A` | `N/A` | Retorna uma lista com todos os produtos cadastrados |
 
 ```
 Response - 200
@@ -35,7 +35,7 @@ Response - 200
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id* Integer`      | `Produto` | Retorna um produto por `id` do produto desejado  |
+| `id*`      | `Integer` | Retorna um produto desejado por `id`  |
 
 ```
 Response - 200
@@ -55,7 +55,7 @@ Response - 200
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `NULL`      | `Void` | Cria um produto do tipo `Produto` |
+| `N/A`      | `N/A` | Cria um produto do tipo `Produto` |
 
 ```
 Response - 201
@@ -80,7 +80,7 @@ RequestBody
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id* Integer`      | `Void` | Deleta um item do tipo `Produto` passando o `id` do item desejado |
+| `id* `      | `Integer` | Deleta um item do tipo `Produto` passando o `id` do item desejado |
 
 ```
 Response - 200
@@ -94,7 +94,7 @@ Response - 200
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id* Integer`      | `Void` | Atualiza um item do tipo `Produto` passando o `id` do item desejado e alterando qualquer atributo do objeto. Caso o id não exista é criado um novo produto |
+| `id*`      | `Integer` | Atualiza um item do tipo `Produto` passando o `id` do item desejado e alterando qualquer atributo do objeto. Caso o id não exista é criado um novo produto |
 
 Váriavel - Opcional
 ```
