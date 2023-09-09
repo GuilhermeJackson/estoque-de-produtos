@@ -35,7 +35,7 @@ Response - 200
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `Produto` | Retorna um produto por `id` do produto desejado  |
+| `id* Integer`      | `Produto` | Retorna um produto por `id` do produto desejado  |
 
 ```
 Response - 200
@@ -75,12 +75,12 @@ RequestBody
 #### Delete um produto
 
 ```http
-  DELETE /api/produtos
+  DELETE /api/produtos/{id}
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `Void` | Deleta um item do tipo `Produto` passando o `id` do item desejado |
+| `id* Integer`      | `Void` | Deleta um item do tipo `Produto` passando o `id` do item desejado |
 
 ```
 Response - 200
@@ -89,12 +89,12 @@ Response - 200
 #### Atualizar um produto
 
 ```http
-  PUT /api/produtos
+  PUT /api/produtos/{id}
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `Void` | Atualiza um item do tipo `Produto` passando o `id` do item desejado e alterando qualquer atributo do objeto. Caso o id não exista é criado um novo produto |
+| `id* Integer`      | `Void` | Atualiza um item do tipo `Produto` passando o `id` do item desejado e alterando qualquer atributo do objeto. Caso o id não exista é criado um novo produto |
 
 Váriavel - Opcional
 ```
