@@ -116,10 +116,3 @@ RequestBody
     "descricao": String
 }
 ```
-
-Para rodar os testes, rode o seguinte comando
-
-```bash
-  npm run test
-```
-
