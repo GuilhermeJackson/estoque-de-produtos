@@ -9,6 +9,7 @@ import lombok.Data;
 
 @Data
 @Entity
+// Objeto que persiste no banco de dados - trânsita entre service e repository
 public class Produto {
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
